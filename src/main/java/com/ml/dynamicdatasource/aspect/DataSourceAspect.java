@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @NAME: DataSourceAspect
- * @DATE: 2019/6/13
+ * @DATE: 2019/6/1
  * @Author Mr.MaL
  * @Description TODO
  **/
@@ -23,7 +23,7 @@ public class DataSourceAspect {
 
     }
 
-    @Before("@annotation(dataSource)")
+    @Before("pointCut() && @annotation(dataSource)")
     public void doBefore(DataSource dataSource) {
         DataSourceContextHolder.setDataSource(dataSource.value());
     }
