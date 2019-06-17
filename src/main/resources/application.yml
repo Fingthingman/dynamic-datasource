@@ -2,14 +2,14 @@ spring:
   datasource:
     druid:
       db0:
-        url: jdbc:mysql://120.79.150.74:3306/ds0?characterEncoding=utf-8
+        url: jdbc:mysql://XXXXXX/ds0?characterEncoding=utf-8
         username: root
-        password: uAiqwVwjJ8-i
+        password: XXX
         driver-class-name: com.mysql.jdbc.Driver
       db1:
-        url: jdbc:mysql://120.24.80.15:3306/ds1?characterEncoding=utf-8
+        url: jdbc:mysql://XXXX/ds1?characterEncoding=utf-8
         username: root
-        password: Shiyi123456
+        password: XXXX
         driver-class-name: com.mysql.jdbc.Driver
     initial-size: 5
     max-active: 20
